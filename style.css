@@ -1,0 +1,209 @@
+body {
+    background-color: rgb(29, 29, 29);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+} 
+#selfie {
+    max-height: auto;
+    max-width: 220px;
+    border-radius: 100%;
+    border: 25px double rgb(132, 171, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+/* Text */
+
+h1 {
+    display: block;
+    color: rgb(29, 29, 29);
+    text-align: center;
+    margin-top: -10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-weight: lighter;
+    font-size: xx-large;
+}
+h2 {
+    display: block;
+    align-content: space-around;
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-size: x-large;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    color: rgb(29, 29, 29);
+}
+h3 {
+    display: block;
+    align-content: space-around;
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-size: x-large;
+    font-weight: lighter;    
+    color: azure;
+}
+.yrke {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: rgb(29, 29, 29);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(29, 29, 29)
+}
+
+/* Länkarna uppe i menyn och hamburgaren*/
+
+ul {
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+}
+li a {
+    display: inline-block;
+    color: rgb(29, 29, 29);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.5s ease;
+}
+li a:hover {
+    background-color: black;
+    color: azure;
+}
+button {
+    display: flex;
+    position: sticky;
+    border: none;
+    background-color: azure;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: rgb(29, 29, 29);
+    border-radius: 50%;
+}
+
+/* Här ändrar jag storlek och färg på blocken på sidan */
+
+.container {
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: antiquewhite;
+    padding: 1rem;
+}
+.header {
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.länkar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.ommig {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 125px;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: antiquewhite;
+}
+.portfolio {
+    display: block;
+    margin-top: 125px;
+    margin-bottom: 125px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: antiquewhite;
+}
+
+/* Här är min footer på sidan */
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(29, 29, 29);
+}
+.social {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1rem;
+    background-color: rgb(29, 29, 29);
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.kontaktuppgifter {
+    text-align: center;
+    color: azure;
+    background-color: rgb(29, 29, 29);
+    display: block;
+    margin-top: 0px;
+}
+@media(max-width: 850px) {
+    .nav-meny {
+        display: none;
+        gap: 0;
+        flex-direction: column;
+        background-color: azure;
+        text-align: center;
+    }
+    .nav-meny.active {
+        display: inline-block;
+
+    }
+    .nav-item {
+        margin: 0px 0;
+    }
+    .hamburger {
+        display: block;
+        padding: 5px 20px;
+    }
+    .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 5px 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    border-radius: 60%;
+    }
+    .transform .bar1 {
+    transform: translate(0, 10px) rotate(-45deg);
+     }
+    .transform .bar2 {opacity: 0;
+    }
+    .transform .bar3 {
+    transform: translate(0, -10px) rotate(45deg);
+    }
+}
